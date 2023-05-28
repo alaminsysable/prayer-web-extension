@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <title>Prayer Time Card</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="card">
+        <div
+          class="card-header d-flex align-items-center justify-content-between"
+        >
+          <div>
+            <h2>Today</h2>
+            <p id="date"></p>
+          </div>
+          <div>
+            <h2 class="">Dhaka</h2>
+            <p id="time"></p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Prayer Time</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Fajr: <span id="fajar"></span></li>
+            <li class="list-group-item">Dhuhr: <span id="dhuhr"></span></li>
+            <li class="list-group-item">Asr: <span id="asr"></span></li>
+            <li class="list-group-item">Maghrib: <span id="maghrib"></span></li>
+            <li class="list-group-item">Isha: <span id="isha"></span></li>
+          </ul>
+          <a href="#" class="btn btn-primary mt-3">Set Reminder</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

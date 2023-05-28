@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Prayer Time Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://www.google.com/"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action_handlers": {
+    "default": {
+      "type": "popup"
+    }
+  }
+}

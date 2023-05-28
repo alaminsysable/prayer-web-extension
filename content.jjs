@@ -1,0 +1,22 @@
+const cardContainer = document.createElement('div');
+cardContainer.id = 'prayerTimeCardContainer';
+
+const card = document.createElement('div');
+card.className = 'card';
+card.innerHTML = `
+  <div class="card-body">
+    <h5 class="card-title">Prayer Time</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies urna vel facilisis faucibus.</p>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Fajr: 05:30 AM</li>
+      <li class="list-group-item">Dhuhr: 12:30 PM</li>
+      <li class="list-group-item">Asr: 03:45 PM</li>
+      <li class="list-group-item">Maghrib: 06:15 PM</li>
+      <li class="list-group-item">Isha: 08:30 PM</li>
+    </ul>
+    <a href="#" class="btn btn-primary mt-3">Set Reminder</a>
+  </div>
+`;
+
+cardContainer.appendChild(card);
+document.body.appendChild(cardContainer);
